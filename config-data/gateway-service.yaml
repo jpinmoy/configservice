@@ -15,9 +15,9 @@ spring:
     gateway:
       globalcors:
         corsConfigurations:
-          '[/*]':
-            allowedOrigins: "*"
-            allowedHeaders: ""
+          '[/**]':
+            allowedOrigins: "http://localhost:3000/"
+            allowedHeaders: "*"
             allowedMethods: "*"
       discovery:
         locator:
